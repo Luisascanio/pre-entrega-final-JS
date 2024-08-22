@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rye&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Tienda Gamer</h1>
+
+        <a href="productos.html" class="banner-link">
+            <img src="img/Banner para Twitch Gamer Neón Morado.png" alt="Banner Gamer" class="banner">
+        </a>
+
+        <h2>Juegos Fisicos</h2>
+    </header>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="container">
+        <template>
+            <div class="col">
+                <div class=" mx-auto p-2" style="width: 300px; ">
+                    <div class="card text-bg-dark mb-3 " style="width: 18rem;">
+                        <img src="" class="card-img-top" alt="...">
+                        <div class="card-body  ">
+                            <h5 class="card-title">juego</h5>
+                            <p class="card-text text-info fs-5" id="parrafoCards">precio</p>
+                            <div class="d-grid gap-2">
+                                <button href="#" class="btn btn-primary">Comprar</button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+    </div>
+
+    <h2>Carrito</h2>
+
+    <div id="containerCarrito" class="containerCarrito">
+
+        <div container-text>
+            <ul id="carritop"></ul>
+        </div>
+
+        <div>
+            <p id="mostrarPrecio"></p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
