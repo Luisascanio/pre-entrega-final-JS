@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(29 29 29);
+    background:linear-gradient(#2c063b, #141414)
+    
 }
 
 h1 {
@@ -58,13 +59,29 @@ p {
 }
 
 .containerCarrito {
-    background-color: rgb(56, 56, 255);
-    border-radius: 20px;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Fondo con degradado oscuro */
+    border-radius: 15px;
     padding: 20px;
-    color: white;
+    color: #f8f8f8;
     max-width: 500px;
     margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    border: 2px solid #1e1e1e;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative; /* Asegura que el contenedor sea la referencia para cualquier pseudo-elemento */
+    z-index: 1; /* Eleva el contenedor sobre cualquier otro contenido */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
+
+.containerCarrito:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+    border-color: #c32ff0; /* Cambia solo el color del borde en hover */
+}
+
+
 
 .botonStyle {
     background: none;
@@ -84,13 +101,6 @@ p {
     object-fit: cover;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
 
 .card-img-top {
     height: 400px;
