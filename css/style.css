@@ -78,7 +78,7 @@ p {
 .containerCarrito:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
-    border-color: #c32ff0; /* Cambia solo el color del borde en hover */
+    border-color: #c32ff0; 
 }
 
 
